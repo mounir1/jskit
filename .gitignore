@@ -1,0 +1,15 @@
+/build/**
+/www/**
+bootstrap.*
+modern.json*
+build.properties
+sencha-error*
+.sencha
+.firebase*
+ios.json*
+.idea/*
+/node_modules/**
+translateMS
+classic.json
+classic.jsonp
+ext

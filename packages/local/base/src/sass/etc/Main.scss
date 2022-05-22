@@ -1,0 +1,276 @@
+.widget-top-first-container {
+    background-color: $widget-first-container-background;
+}
+
+.widget-bottom-first-container {
+    background-color: $lightest-color;
+}
+
+.postion-class {
+    position: relative;
+}
+
+.widget-name-text {
+    font-family: "Open Sans";
+    font-weight: Bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.widget-tool-button {
+    .widget-follow-button,
+    .widget-follow-button .x-frame-mc {
+        @include btn-border($follow-button-color);
+    }
+
+    .widget-message-button,
+    .widget-message-button .x-frame-mc {
+        @include btn-border($base-color);
+    }
+
+    .x-btn-inner-default-toolbar-small {
+        color: $lightest-color;
+    }
+}
+
+.widget-top-container-first-img {
+    position: absolute;
+    z-index: 200;
+    margin-top: 94px;
+    border: 3px solid $lightest-color;
+    @include border-radius(36px);
+    left: 50%;
+    margin-left: -33px;
+}
+
+.widget-top-second-container {
+    background-color: $widget-second-container-background;
+}
+
+.widget-top-first-third-container {
+    background-color: $widget-third-container-background;
+}
+
+.widget-top-first-fourth-container {
+    background: url('images/img2.jpg');
+    background-size: 100% auto;
+}
+
+.widget-top-second-panel .x-fa {
+    color: $lightest-color;
+}
+
+.widget-follower-toolbar {
+    background-color: $follower-toolbar-background;
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid $base-border-color;
+    border-bottom: 1px solid $base-border-color;
+
+    .x-form-display-field {
+        font-size: 13px;
+        color: $FAQ-sub-header-color;
+        font-family: "Open Sans";
+    }
+
+    .x-form-display-field .label {
+        color: $color;
+        font-size: 12px;
+    }
+
+    .widget-follower-tool-label {
+        border-left: 1px solid $base-border-color;
+        border-right: 1px solid $base-border-color;
+    }
+}
+
+.info-card-item {
+    text-align: center;
+    background: $lightest-color ;
+    padding: 45px 10px !important;
+    font-size: 24px;
+
+    &.info-card-large-wrap {
+        h2 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        span.x-fa {
+            height: 75px;
+            width: 75px;
+            border-radius: 38px;
+            color: $lightest-color;
+            font-size: 30px;
+            line-height: 75px;
+            margin: 15px 0;
+
+            &.fa-shopping-cart {
+                background-color: $sale-container-color;
+            }
+
+            &.fa-envelope {
+                background-color: $message-container-color;
+            }
+
+            &.fa-code {
+                background-color: $code-container-color;
+            }
+
+            &.fa-file-alt {
+                background-color: $user-container-color;
+            }
+        }
+
+        .infodiv {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &.cornflower-blue:before {
+        background: $sale-container-color;
+    }
+
+    &.green:before {
+        background: $message-container-color;
+    }
+
+    &.magenta:before {
+        background: $code-container-color;
+    }
+
+    &.pink:before {
+        background: $user-container-color;
+    }
+
+    &.orange:before {
+        background: $server-container-color;
+    }
+
+    &.blue:before {
+        background: $file-container-color;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: normal;
+        margin: 0;
+        margin: 0;
+        line-height: 32px;
+    }
+
+    div {
+        line-height: 24px;
+    }
+
+    span {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+.info-card-item:before {
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    content: "";
+    top: 0;
+    left: 0
+}
+
+/*
+ * This file contains styling for the Main view.
+ */
+
+/*
+ * Generates a set of style rules for the "navigation" tab UI.
+ */
+@include extjs-tab-panel-ui(
+    $ui: 'navigation',
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-over: $jskit-tab-background-color-over,
+    $ui-tab-background-color-active: $jskit-tab-background-color-active,
+    $ui-tab-background-gradient: 'none',
+    $ui-tab-background-gradient-over: 'none',
+    $ui-tab-background-gradient-active: 'none',
+    $ui-tab-color: $jskit-tab-color ,
+    $ui-tab-color-over:$jskit-tab-color-over,
+    $ui-tab-color-active: $jskit-tab-color-active,
+    $ui-tab-glyph-color:$jskit-tab-glyph-color,
+    $ui-tab-glyph-color-over:$jskit-tab-glyph-color-over ,
+    $ui-tab-glyph-color-active:$jskit-tab-glyph-color-active,
+    $ui-tab-glyph-opacity: 1,
+    $ui-tab-border-radius: 0,
+    $ui-tab-border-width: 0,
+    $ui-tab-inner-border-width: 0,
+    $ui-tab-padding: 24px,
+    $ui-tab-margin: 0,
+    $ui-tab-font-size: 15px,
+    $ui-tab-font-size-over: 15px,
+    $ui-tab-font-size-active: 15px,
+    $ui-tab-line-height: 19px,
+    $ui-tab-font-weight: bold,
+    $ui-tab-font-weight-over: bold,
+    $ui-tab-font-weight-active: bold,
+    $ui-tab-icon-width: 24px,
+    $ui-tab-icon-height: 24px,
+    $ui-tab-icon-spacing: 5px,
+    $ui-bar-background-color: $jskit-bar-background-color ,
+    $ui-bar-background-gradient: 'none',
+    $ui-bar-padding: 0,
+    $ui-strip-height: 0
+);
+
+/*
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+@include extjs-panel-ui(
+    $ui: 'navigation',
+    $ui-header-color: #fff,
+    $ui-header-glyph-color: #fff,
+    $ui-header-glyph-opacity: 1,
+    $ui-header-font-size: 20px,
+    $ui-header-line-height: 24px,
+    $ui-header-font-weight: bold,
+    $ui-header-icon-height: 24px,
+    $ui-header-icon-width: 24px,
+    $ui-header-icon-spacing: 15px,
+    $ui-header-background-color: $base-color,
+    $ui-header-padding: 0,
+    $ui-header-text-margin: 36px,
+    $ui-header-noborder-adjust: false
+);
+
+.x-title-icon-navigation {
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+    font-family: 'Font Awesome 5 Free';
+    color: #acacac;
+
+    .x-tab-over & {
+        color: #c4c4c4;
+    }
+
+    .x-tab-active & {
+        color: #fff;
+    }
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
+
+
+//triggers
+.x-form-trigger.fa {
+    display: table-cell;
+    background-image: none !important;
+}

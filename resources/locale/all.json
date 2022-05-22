@@ -1,0 +1,446 @@
+[
+    {
+        "key": "notes",
+        "english": "Notes"
+    },
+    {
+        "key": "owner",
+        "english": "Owner"
+    },
+    {
+        "key": "users",
+        "english": "Users"
+    },
+    {
+        "key": "music",
+        "english": "Music"
+    },
+    {
+        "key": "books",
+        "english": "Books"
+    },
+    {
+        "key": "musics",
+        "english": "Musics"
+    },
+    {
+        "key": "note",
+        "english": "Note"
+    },
+    {
+        "key": "smoke",
+        "english": "Smoker"
+    },
+    {
+        "key": "alcohol",
+        "english": "Alcoholic"
+    },
+    {
+        "key": "logout",
+        "english": "Logout"
+    },
+    {
+        "key": "phone",
+        "german": "Telefon",
+        "turkish": "Telefon",
+        "russian": "Телефон",
+        "arabic": "التليفون",
+        "english": "Phone",
+        "spanish": "Teléfono",
+        "french": "Téléphone"
+    },
+    {
+        "key": "address",
+        "german": "Adresse",
+        "turkish": "Adres",
+        "russian": "Адрес",
+        "arabic": "عنوان",
+        "english": "Address",
+        "spanish": "Dirección",
+        "french": "Adresse"
+    },
+    {
+        "key": "arabic",
+        "german": "Arabisch",
+        "turkish": "Arapça",
+        "russian": "арабский",
+        "arabic": "عربي",
+        "english": "Arabic",
+        "spanish": "Arábica",
+        "french": "Arabe"
+    },
+    {
+        "key": "birthday",
+        "german": "Geburtstag",
+        "turkish": "Doğum Günü",
+        "russian": "день рождения",
+        "arabic": "عيد ميلاد",
+        "english": "Birthday",
+        "spanish": "Cumpleaños",
+        "french": "Anniversaire"
+    },
+    {
+        "key": "books",
+        "german": "Bücher",
+        "turkish": "Kitaplar",
+        "russian": "книги",
+        "arabic": "كتب",
+        "english": "Books",
+        "spanish": "libros",
+        "french": "Livres"
+    },
+    {
+        "key": "calendar",
+        "german": "Kalender",
+        "turkish": "Takvim",
+        "russian": "календарь",
+        "arabic": "التقويم",
+        "english": "Calendar",
+        "spanish": "Calendario",
+        "french": "Calendrier"
+    },
+    {
+        "key": "confiurations",
+        "german": "Konfigurationen",
+        "turkish": "Yapılanışlar",
+        "russian": "Конфигурации",
+        "arabic": "التوصيفات",
+        "english": "Configurations",
+        "spanish": "Configuraciones",
+        "french": "Configurations"
+    },
+    {
+        "key": "doctors",
+        "german": "Ärzte",
+        "turkish": "Doktorlar",
+        "russian": "Врачи",
+        "arabic": "الأطباء",
+        "english": "Doctors",
+        "spanish": "Doctores",
+        "french": "Médecins"
+    },
+    {
+        "key": "email",
+        "german": "Email",
+        "turkish": "E-Posta",
+        "russian": "Эл. почта",
+        "arabic": "البريد الإلكتروني",
+        "english": "E-mail",
+        "spanish": "Email",
+        "french": "Courrier électronique"
+    },
+    {
+        "key": "edit",
+        "german": "Bearbeiten",
+        "turkish": "Düzenle",
+        "russian": "редактировать",
+        "arabic": "تصحيح",
+        "english": "Edit",
+        "spanish": "Editar",
+        "french": "modifier"
+    },
+    {
+        "key": "employees",
+        "german": "Angestellte",
+        "turkish": "Çalışanlar",
+        "russian": "Сотрудники",
+        "arabic": "الموظفين",
+        "english": "Employees",
+        "spanish": "Empleados",
+        "french": "Employés"
+    },
+    {
+        "key": "english",
+        "german": "Englisch",
+        "turkish": "İngilizce",
+        "russian": "английский",
+        "arabic": "الإنكليزية",
+        "english": "English",
+        "spanish": "Inglés",
+        "french": "Anglais"
+    },
+    {
+        "key": "firstname",
+        "german": "Vorname",
+        "turkish": "Adı",
+        "russian": "имя",
+        "arabic": "الاسم الأول",
+        "english": "First Name",
+        "spanish": "Nombre de pila",
+        "french": "Prénom"
+    },
+    {
+        "key": "forgotpassword",
+        "german": "Passwort vergessen",
+        "turkish": "Parolanızı mı unuttunuz",
+        "russian": "Забыли пароль",
+        "arabic": "هل نسيت كلمة المرور",
+        "english": "Forgot Password",
+        "spanish": "Se te olvidó tu contraseña",
+        "french": "Mot de passe oublié"
+    },
+    {
+        "key": "french",
+        "german": "Französisch",
+        "turkish": "Fransızca",
+        "russian": "французский",
+        "arabic": "الفرنسية",
+        "english": "French",
+        "spanish": "francés",
+        "french": "Français"
+    },
+    {
+        "key": "german",
+        "german": "Deutsche",
+        "turkish": "Almanca",
+        "russian": "Немецкий",
+        "arabic": "ألمانية",
+        "english": "German",
+        "spanish": "alemán",
+        "french": "Allemand"
+    },
+    {
+        "key": "images",
+        "german": "Bilder",
+        "turkish": "Resimler",
+        "russian": "Изображений",
+        "arabic": "صور",
+        "english": "Images",
+        "spanish": "Imágenes",
+        "french": "Images"
+    },
+    {
+        "key": "items",
+        "german": "Artikel",
+        "turkish": "Öğeler",
+        "russian": "Предметы",
+        "arabic": "البنود",
+        "english": "Items",
+        "spanish": "artículos",
+        "french": "Articles"
+    },
+    {
+        "key": "language",
+        "german": "Sprache",
+        "turkish": "Dil",
+        "russian": "язык",
+        "arabic": "اللغة",
+        "english": "Language",
+        "spanish": "idioma",
+        "french": "Langue"
+    },
+    {
+        "key": "lastname",
+        "german": "Nachname",
+        "turkish": "Soyadı",
+        "russian": "Фамилия",
+        "arabic": "الاسم الأخير",
+        "english": "Last Name",
+        "spanish": "Apellido",
+        "french": "Nom de famille"
+    },
+    {
+        "key": "login",
+        "german": "Anmeldung",
+        "turkish": "Oturum Aç",
+        "russian": "Авторизоваться",
+        "arabic": "بدء الاتصال",
+        "english": "Login",
+        "spanish": "Iniciar sesión",
+        "french": "Connexion"
+    },
+    {
+        "key": "movies",
+        "german": "Filme",
+        "turkish": "Filmler",
+        "russian": "Фильмы",
+        "arabic": "أفلام",
+        "english": "Movies",
+        "spanish": "Películas",
+        "french": "Films"
+    },
+    {
+        "key": "mybooks",
+        "german": "Meine Bücher",
+        "turkish": "Kitaplarım",
+        "russian": "Мои книги",
+        "arabic": "الكتب الخاصة بي",
+        "english": "My Books",
+        "spanish": "Mis libros",
+        "french": "Mes livres"
+    },
+    {
+        "key": "mymovies",
+        "german": "Meine Filme",
+        "turkish": "Filmlerim",
+        "russian": "Мои фильмы",
+        "arabic": "أفلامي",
+        "english": "My Movies",
+        "spanish": "Mis peliculas",
+        "french": "Mes films"
+    },
+    {
+        "key": "mymusic",
+        "german": "Meine Musik",
+        "turkish": "Müziklerim",
+        "russian": "Моя музыка",
+        "arabic": "موسيقاي",
+        "english": "My Music",
+        "spanish": "Mi música",
+        "french": "Ma musique"
+    },
+    {
+        "key": "new",
+        "german": "Neu",
+        "turkish": "Yeni",
+        "russian": "новый",
+        "arabic": "الجديد",
+        "english": "New",
+        "spanish": "nuevo",
+        "french": "Nouveau"
+    },
+    {
+        "key": "news",
+        "german": "Nachrichten",
+        "turkish": "Haberler",
+        "russian": "Новости",
+        "arabic": "الأخبار",
+        "english": "News",
+        "spanish": "Noticias",
+        "french": "Nouvelles"
+    },
+    {
+        "key": "organizer",
+        "german": "Veranstalter",
+        "turkish": "Düzenleyici",
+        "russian": "Организатор",
+        "arabic": "القائم بالتنظيم",
+        "english": "Organizer",
+        "spanish": "Organizador",
+        "french": "Organisateur"
+    },
+    {
+        "key": "password",
+        "german": "Passwort",
+        "turkish": "Parola",
+        "russian": "пароль",
+        "arabic": "كلمة السرية",
+        "english": "Password",
+        "spanish": "Contraseña",
+        "french": "Mot de passe"
+    },
+    {
+        "key": "patients",
+        "german": "Patienten",
+        "turkish": "Hastalar",
+        "russian": "Пациенты",
+        "arabic": "المرضى",
+        "english": "Patients",
+        "spanish": "Pacientes",
+        "french": "Patients"
+    },
+    {
+        "key": "products",
+        "german": "Produkte",
+        "turkish": "Ürünler",
+        "russian": "Товары",
+        "arabic": "المنتجات",
+        "english": "Products",
+        "spanish": "productos",
+        "french": "Produits"
+    },
+    {
+        "key": "profilewindow",
+        "german": "Profilfenster",
+        "turkish": "Profil Penceresi",
+        "russian": "Окно профиля",
+        "arabic": "نافذة ملف المواصفات",
+        "english": "Profile Window",
+        "spanish": "Ventana de perfil",
+        "french": "Fenêtre de profil"
+    },
+    {
+        "key": "russian",
+        "german": "Russisch",
+        "turkish": "Rusça",
+        "russian": "русский",
+        "arabic": "الروسية",
+        "english": "Russian",
+        "spanish": "ruso",
+        "french": "russe"
+    },
+    {
+        "key": "spanish",
+        "german": "Spanisch",
+        "turkish": "İspanyol",
+        "russian": "испанский",
+        "arabic": "الأسبانية",
+        "english": "Spanish",
+        "spanish": "español",
+        "french": "Espanol"
+    },
+    {
+        "key": "status",
+        "german": "Status",
+        "turkish": "durum",
+        "russian": "Статус",
+        "arabic": "الحالة",
+        "english": "Status",
+        "spanish": "Estado",
+        "french": "Statut"
+    },
+    {
+        "key": "tasks",
+        "german": "Aufgaben",
+        "turkish": "Görevler",
+        "russian": "задачи",
+        "arabic": "المهام",
+        "english": "Tasks",
+        "spanish": "Tareas",
+        "french": "Tâches"
+    },
+    {
+        "key": "title",
+        "german": "Titel",
+        "turkish": "Başlık",
+        "russian": "заглавие",
+        "arabic": "عنوان",
+        "english": "Title",
+        "spanish": "Título",
+        "french": "Titre"
+    },
+    {
+        "key": "translations",
+        "german": "Übersetzungen",
+        "turkish": "Çeviriler",
+        "russian": "Переводы",
+        "arabic": "ترجمات",
+        "english": "Translations",
+        "spanish": "Traducciones",
+        "french": "Traductions"
+    },
+    {
+        "key": "turkish",
+        "german": "Türkisch",
+        "turkish": "Türkçe",
+        "russian": "турецкий",
+        "arabic": "التركية",
+        "english": "Turkish",
+        "spanish": "turco",
+        "french": "Turc"
+    },
+    {
+        "key": "videos",
+        "german": "Videos",
+        "turkish": "Videolar",
+        "russian": "видео",
+        "arabic": "أشرطة فيديو",
+        "english": "Videos",
+        "spanish": "Videos",
+        "french": "Vidéos"
+    },
+    {
+        "key": "category",
+        "english": "Category"
+    }
+]

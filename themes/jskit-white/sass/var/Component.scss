@@ -1,0 +1,31 @@
+$base-color: dynamic(#dd16bc);
+$base-highlight-color: dynamic(mix(#99ff2b, $base-color, 20%));
+$base-light-color: dynamic(mix(#ff996b, $base-color, 60%));
+$base-dark-color: dynamic(mix(rgba(255, 227, 27, 0.47), $base-color, 20%));
+$neutral-color: dynamic(#d0d0d0);
+$neutral-light-color: dynamic(mix(#fff, $neutral-color, 80%));
+$neutral-highlight-color: dynamic(mix(#fff, $neutral-color, 60%));
+$neutral-medium-dark-color: dynamic(mix(#ffe31b, $neutral-color, 15.2%));
+$neutral-dark-color: dynamic(mix(#ff996b, $neutral-color, 30.4%));
+$font-weight: dynamic(300);
+$font-weight-bold: dynamic(400);
+$font-family: dynamic('Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif);
+
+// text color
+$color: dynamic(#914edd);
+// lighter text color for use on light backgrounds
+$highlight-color: dynamic(#00fc71);
+// light text color for use on dark backgrounds
+$light-color: dynamic(#f0785c);
+$enable-font-icons: dynamic(true);
+
+
+$jskit-tab-background-color-over: #ffe31b;
+$jskit-tab-background-color-active: #05d00f;
+$jskit-tab-color: #acacac;
+$jskit-tab-color-over: #c4c4c4;
+$jskit-tab-color-active: #fff;
+$jskit-tab-glyph-color: #acacac;
+$jskit-tab-glyph-color-over: #805f14;
+$jskit-tab-glyph-color-active: #05d00f;
+$jskit-bar-background-color: #805f14;

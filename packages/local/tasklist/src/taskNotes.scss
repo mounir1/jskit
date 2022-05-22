@@ -1,0 +1,86 @@
+.user-notifications,
+.timeline-items-wrap {
+  padding: 15px;
+  background: #fff;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border: 2px solid $base-border-color;
+  @include border-radius($circle-border-radius);
+  float: left;
+}
+
+@media (max-width: 450px) {
+  .userProfile-container .comments {
+    h4, .from-now {
+      float: none;
+    }
+
+    .from-now {
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+.comments {
+  margin-bottom: 10px;
+
+  img {
+    &.profile-icon {
+      height: 50px;
+      width: 50px;
+      border: 2px solid $base-border-color;
+      @include border-radius($circle-border-radius);
+      float: left;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    margin: 0 10px 12px 0;
+    float: left;
+
+    span {
+      margin-left: 8px;
+      font-size: 18px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  .from-now {
+    float: right;
+
+    span {
+      margin-right: 5px;
+      font-size: 16px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .content-wrap {
+    margin-left: 65px;
+
+    .content {
+      margin-bottom: 15px;
+      white-space: normal;
+      clear: both;
+    }
+  }
+
+  &.sub-comments {
+    margin: 0 0 10px 60px;
+    border-bottom: 1px solid $base-border-color;
+
+    .like-comment-btn-wrap {
+      border-bottom: none;
+    }
+  }
+}

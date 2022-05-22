@@ -1,0 +1,210 @@
+{
+    "name": "jskit",
+    "namespace": "jskit",
+    "version": "1.0.0.2",
+    "framework": "ext",
+    "requires": [
+        "package-loader",
+        "font-awesome",
+        "base"
+    ],
+
+    "uses": [    
+        "jsAuth",
+        "booklist",
+        "categorylist",
+        "doctorlist",
+        "gbooklist",
+        "movieslist",
+        "mymovieslist",
+        "mymusiclist",
+        "myvideoslist",
+        "noteslist",
+        "organizer",
+        "patientlist",
+        "peoplelist",
+        "productslist",
+        "tasklist",
+        "translationslist",
+        "youtubplaylist",
+        "newslist",
+        "calendarlist",
+        "itemslist",
+        "imageslist"
+    ],
+    "froala": {
+        "activation-key": "YNB3fJ3B7A7C6D6E3A-9UJHAEFZMUJOYGYQEa1c1ZJg1RAeF5C4C3D3E2C2C6D6D4B3=="
+    },
+    "indexHtmlPath": "index.html",
+    "classpath": [
+        "app",
+        "${toolkit.name}/src"
+    ],
+    "overrides": [
+        "overrides",
+        "${toolkit.name}/overrides"
+    ],
+    "fashion": {
+        "missingParameters": "error",
+        "inliner": {
+            "enable": false
+        }
+    },
+    "sass": {
+        "namespace": "jskit",
+        "etc": [
+            "sass/etc/all.scss"
+        ],
+        "var": [
+            "sass/var/all.scss",
+            "sass/var"
+        ],
+        "src": [
+            "sass/src"
+        ]
+    },
+    "js": [{
+        "path": "app.js",
+        "bundle": true,
+        "update": "full",
+        "includeInBundle": true
+    }],
+    "css": [{
+            "path": "${theme.name}",
+            "bundle": true,
+            "exclude": [
+                "fashion"
+            ]
+        },
+        {
+            "path": "https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.4/jsoneditor.min.css",
+            "remote": true
+        }
+    ],
+    "loader": {
+        "enabled": false,
+        "disableCaching ": true,
+        "cache": true,
+        "cacheParam": "jskit"
+    },
+    "production": {
+        "output": {
+            "appCache": {
+                "enable": true,
+                "path": "cache.appcache"
+            }
+        },
+        "loader": {
+            "enable": true,
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": false
+        },
+        "compressor": {
+            "type": "yui"
+        }
+    },
+    "testing": {},
+    "development": {
+        "resources": [
+            {
+                "path": "${workspace.build.dir}/${build.environment}/${app.name}/resources"
+            }
+        ],
+        "cache": {
+            "enable": false,
+            "deltas": false
+        },
+        "loader": {
+            "enable": true
+        },
+        "watch": {
+            "delay": 250
+        }
+    },
+    "bootstrap": {
+        "base": "${app.dir}",
+        "manifest": "${app.name}.json",
+        "microloader": "bootstrap.js",
+        "css": "bootstrap.css"
+    },
+    "output": {
+        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        "page": "index.html",
+        "manifest": "${app.name}.json",
+        "appCache": {
+            "enable": false
+        },
+        "js": {
+            "filter": "minimum"
+        }
+        //        "framework": {
+        //            "enable": true,
+        //            "path": "${build.id}/framework.js"
+        //        },
+        //        "appCache": {
+        //            "enable": false
+        //        }
+    },
+    "cache": {
+        "enable": true,
+        "deltas": "deltas"
+    },
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "resources": [{
+        "path": "${toolkit.name}/resources"
+    }],
+    "archivePath": "archive",
+    "google": {
+        "client_id": "276818485482-ldkeji34iiv7iktiahmh5h2mqhren02k.apps.googleusercontent.com"
+    },
+    "progressive": {
+        "manifest": {
+            "name": "JsKit ERP",
+            "short_name": "JSkit",
+            "icons": [{
+                "src": "resources/img/favicon.png",
+                "sizes": "96x96"
+            }],
+            "theme_color": "#054059",
+            "background_color": "#054059",
+            "display": "standalone",
+            "orientation": "portrait",
+            "start_url": "/index.html",
+            "related_applications": [{
+                "platform": "play",
+                "url": "https://play.google.com/store/apps/details?id=systems.hotech.otello"
+            }]
+        },
+        "serviceWorker": {
+            "runtimeCaching": [{
+                    "urlPattern": "\\/api\\/events"
+                },
+                {
+                    "urlPattern": "\\/api\\/events\\/d",
+                    "options": {
+                        "cache": {
+                            "name": "events",
+                            "maxEntries": 10
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "toolkit": "classic",
+    "theme": "jskit-app",
+    "ignore": [
+        "(^|/)CVS(/?$|/.*?$)"
+    ],
+    "id": "236ca86b-5605-42cd-b63f-ad69e5619278"
+}

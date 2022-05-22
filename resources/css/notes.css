@@ -1,0 +1,36 @@
+.sticky-wrap {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 201px;
+    height: 150px;
+    background-color: #00cdff5c;
+    overflow-y: auto;
+}
+
+.note-title {
+    font-size: large;
+    font-weight: bold;
+    margin: 1px;
+}
+
+.note-text {
+    margin-top: 3px;
+}
+
+.note-tool {
+    z-index: 3;
+    background-color: transparent;
+    border: none;
+}
+
+.note-tools {
+    float: right;
+    position: sticky;
+    top: 125px;
+
+}
+
+.note-tools > i {
+    margin-left: 5px;
+}

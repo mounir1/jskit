@@ -1,0 +1,31 @@
+{
+    "lang": "en",
+    "name": "JS Kit",
+    "short_name": "JS kit",
+    "description": "Js Kit ",
+    "icons": [
+        {
+            "src": "img/favicon.png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/favicon.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/favicon.png",
+            "sizes": "256x256"
+        }
+    ],
+    "splash_screens": [
+        {
+            "src": "splash.png",
+            "sizes": "600x800"
+        }
+    ],
+    "theme_color": "#2ebd59",
+    "background_color": "#000",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "start_url": "../index.html"
+}

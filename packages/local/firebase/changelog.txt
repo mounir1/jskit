@@ -1,0 +1,43 @@
+== Release 0.8
+
+* Firebase AUTH
+- Firebase AUTH API
+- Firebase AUTH VIEWS
+
+* Firebase Database
+- EventStream API
+- Firebase REST proxy
+
+== Release 1
+
+WORKING ON:
+
+* Firebase Database
+- Realtime - need to come up with something that notice the id and update the record.
+- Edit, Add, Delete calls
+- WebSockets API
+
+* Example App
+- Host in Firebase
+- Mobile Material Design version
+
+- Instructions to get example running
+1. download framework
+2. run sencha generate workspace
+3. run sencha generate app MyApp ../../
+4. download zip from git, and copy over
+5. create firebase.config file
+6. sencha app watch
+7. locahost:1841
+
+=== Release 2
+
+* Firebase Storage
+
+=== Known Issues
+
+* Firebase Database
+
+- The Firebase rest API does not server-side sort results: https://firebase.google.com/docs/database/rest/retrieve-data#section-rest-ordered-data
+- Is there any way how we can support proper paging?
+

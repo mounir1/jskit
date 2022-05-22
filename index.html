@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <link rel="shortcut icon" href="resources/img/favicon.ico">
+    <title>jskit</title>
+    <link rel="stylesheet" href="resources/css/animate.css">
+    <link rel="stylesheet" href="resources/css/particles.css">
+    <link rel="stylesheet" href="resources/css/notes.css">
+    <script type="text/javascript" src="resources/js/md5.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.4/jsoneditor.min.js"></script>
+    <script type="text/javascript" defer src="resources/js/face-api.min.js"></script>
+    <script type="text/javascript" defer src="resources/js/particles.min.js"></script>
+    <script type="text/javascript">var Ext = Ext || {},
+        config = {},
+        jskitTranslations = JSON.parse(localStorage.getItem('currLang')) || {},
+        offlineSettings = JSON.parse(localStorage.getItem('jskitSett')) || {lang: 'english'},
+        theme = localStorage.getItem('appTheme'),
+        initConfig = '%7B%22VP749SPSS5-G%22:%22dItnemerusaem%22,%227e4b888735cd00edb12701:bew:492821826278:1%22:%22dIppa%22,%22492821826278%22:%22dIredneSgnigassem%22,%22moc.topsppa.ytuaeb-nelag%22:%22tekcuBegarots%22,%22ytuaeb-nelag%22:%22dItcejorp%22,%22moc.oiesaberif.ytuaeb-nelag//:sptth%22:%22LRUesabatad%22,%22moc.ppaesaberif.ytuaeb-nelag%22:%22niamoDhtua%22,%224thdrQtNMf0yUQNcf72ZiwPwKYk1-km4DySazIA%22:%22yeKipa%22%7D';
+
+    Ext.JsKitData = {projectName: 'Galen Beauty'};
+
+    // Ext.beforeLoad = function(tags){
+    //     Ext.manifest = profile || 'classic';
+    // };
+    window.getLocalTranslationFile = function(lang){
+        return new Promise((resolve, reject) => {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'resources/locale/all.json', true);
+            xhr.responseType = 'blob';
+            xhr.addEventListener('load', function(){
+                if (xhr.status === 200){
+                    let fileReader = new FileReader();
+                    fileReader.onload = function(event){
+                        let result = event.target.result,
+                            outLanguage = {},
+                            languages = JSON.parse(decode(result.substring(result.indexOf(',') + 1)));
+                        if (lang){
+                            languages.forEach(item => {
+                                outLanguage[item.key] = item[lang] || '****';
+                            });
+                        }
+                        else{
+                            outLanguage = languages;
+                        }
+                        resolve(outLanguage);
+                    };
+                    fileReader.readAsDataURL(xhr.response);
+                }
+            }, false);
+            xhr.send();
+        });
+    };
+    window.decode = function(input){
+        var me = this,
+            output = '',
+            i = 0,
+            str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',
+            chr1,
+            chr2,
+            chr3,
+            enc1,
+            enc2,
+            enc3,
+            enc4,
+            len;
+        input = input.replace(/[^A-Za-z0-9+=\/]/g, '');
+        len = input.length;
+        while (i < len){
+            enc1 = str.indexOf(input.charAt(i++));
+            enc2 = str.indexOf(input.charAt(i++));
+            enc3 = str.indexOf(input.charAt(i++));
+            enc4 = str.indexOf(input.charAt(i++));
+            chr1 = (enc1 << 2) | (enc2 >> 4);
+            chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+            chr3 = ((enc3 & 3) << 6) | enc4;
+            output = output + String.fromCharCode(chr1);
+            if (enc3 !== 64){
+                output = output + String.fromCharCode(chr2);
+            }
+            if (enc4 !== 64){
+                output = output + String.fromCharCode(chr3);
+            }
+        }
+        output = me._utf8_decode(output);
+        return output;
+    };
+    window._utf8_decode = function(utftext){
+        var string = '',
+            i = 0,
+            c = 0,
+            c3 = 0,
+            c2 = 0,
+            len = utftext.length;
+        while (i < len){
+            c = utftext.charCodeAt(i);
+            if (c < 128){
+                string += String.fromCharCode(c);
+                i++;
+            }
+            else if ((c > 191) && (c < 224)){
+                c2 = utftext.charCodeAt(i + 1);
+                string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                i += 2;
+            }
+            else{
+                c2 = utftext.charCodeAt(i + 1);
+                c3 = utftext.charCodeAt(i + 2);
+                string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                i += 3;
+            }
+        }
+        return string;
+    };
+    !jskitTranslations.language && window.getLocalTranslationFile(offlineSettings.lang)
+                                         .then(file => {
+                                             jskitTranslations = file;
+                                             location.hostname !== 'localhost' && localStorage.setItem('currLang', JSON.stringify(jskitTranslations));
+                                         });
+
+
+    </script>
+    <script id="microloader" data-app="236ca86b-5605-42cd-b63f-ad69e5619278" type="text/javascript" src="bootstrap.js"></script>
+</head>
+<body>
+<div id="particles-js"></div>
+</body>
+</html>

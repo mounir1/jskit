@@ -1,0 +1,28 @@
+{
+    "name": "booklist",
+
+    "sencha": {
+        "namespace": "base",
+        "type": "code",
+        "extend":"base",
+        "requires": [],
+
+        "version": "1.0.0",
+        "compatVersion": "1.0.0",
+        "format": "1",
+        "local": true,
+        
+        "sass" : null,
+        "slicer": null,
+
+        "output": "${package.dir}/build",
+
+        "classpath": [
+            "${package.dir}/src"
+        ],
+
+        "overrides": [
+            "${package.dir}/overrides"
+        ]
+    }
+}

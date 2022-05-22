@@ -1,0 +1,134 @@
+/*
+ * This file contains styling for the Main view.
+ */
+
+/*
+ * Generates a set of style rules for the "navigation" tab UI.
+ */
+@include extjs-tab-panel-ui(
+        $ui: 'navigation',
+        $ui-tab-background-color: transparent,
+        $ui-tab-background-color-over: #505050,
+        $ui-tab-background-color-active: #303030,
+        $ui-tab-background-gradient: 'none',
+        $ui-tab-background-gradient-over: 'none',
+        $ui-tab-background-gradient-active: 'none',
+        $ui-tab-color: #acacac,
+        $ui-tab-color-over: #c4c4c4,
+        $ui-tab-color-active: #fff,
+        $ui-tab-glyph-color: #acacac,
+        $ui-tab-glyph-color-over: #c4c4c4,
+        $ui-tab-glyph-color-active: #fff,
+        $ui-tab-glyph-opacity: 1,
+        $ui-tab-border-radius: 0,
+        $ui-tab-border-width: 0,
+        $ui-tab-inner-border-width: 0,
+        $ui-tab-padding: 24px,
+        $ui-tab-margin: 0,
+        $ui-tab-font-size: 15px,
+        $ui-tab-font-size-over: 15px,
+        $ui-tab-font-size-active: 15px,
+        $ui-tab-line-height: 19px,
+        $ui-tab-font-weight: bold,
+        $ui-tab-font-weight-over: bold,
+        $ui-tab-font-weight-active: bold,
+        $ui-tab-icon-width: 24px,
+        $ui-tab-icon-height: 24px,
+        $ui-tab-icon-spacing: 5px,
+        $ui-bar-background-color: #404040,
+        $ui-bar-background-gradient: 'none',
+        $ui-bar-padding: 0,
+        $ui-strip-height: 0
+);
+
+
+$treelist-nav-ui: (
+        padding: 0 10px,
+        background-color: $panel-navigation-background-color,
+        toolstrip-background-color: #32404e,
+        tool-float-indicator-color: $panel-header-background-color,
+        tool-float-indicator-width: 5px,
+        tool-indicator-selected-color: $panel-header-background-color,
+        tool-indicator-selected-width: 5px,
+        tool-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+        item-expanded-background-color: #2c3845,
+        item-line-height: $panel-navigation-item-line-height,
+        row-over-background-color: mix(white, $panel-navigation-background-color, 5%),
+        row-selected-background-color: mix(white, $panel-navigation-background-color, 10%),
+        item-icon-color: $panel-navigation-item-text-color,
+        item-expander-color: #fff,
+        item-text-color: #ADB3B8,
+        item-icon-over-color: #fff,
+        item-expander-over-color: #fff,
+        item-text-over-color: mix(white, $panel-navigation-item-text-color, 50%),
+        item-text-font-size: 14px,
+        item-icon-font-size: 18px,
+        item-icon-width: 44px,
+        item-expander-font-size: 16px,
+        item-expander-width: 24px,
+        row-indicator-width: 5px,
+        row-indicator-selected-color: $panel-header-background-color,
+        row-indicator-selected-over-color: lighten($panel-header-background-color, 7%),
+        row-indicator-over-color: transparent
+);
+
+/*
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+@include extjs-panel-ui(
+        $ui: 'navigation',
+        $ui-header-color: #fff,
+        $ui-header-glyph-color: #fff,
+        $ui-header-glyph-opacity: 1,
+        $ui-header-font-size: 20px,
+        $ui-header-line-height: 24px,
+        $ui-header-font-weight: bold,
+        $ui-header-icon-height: 24px,
+        $ui-header-icon-width: 24px,
+        $ui-header-icon-spacing: 15px,
+        $ui-header-background-color: $base-color,
+        $ui-header-padding: 0,
+        $ui-header-text-margin: 36px,
+        $ui-header-noborder-adjust: false
+);
+
+.x-title-icon-navigation {
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+  font-family: FontAwesome;
+  color: #acacac;
+
+  .x-tab-over & {
+    color: #c4c4c4;
+  }
+
+  .x-tab-active & {
+    color: #fff;
+  }
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.small-image {
+  width: 32px;
+  height: 32px;
+}
+
+.iframe {
+  float: left;
+  width: calc(100%);
+  height: 400px;
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+  top: 30px;
+  right: -24px;
+}
+
